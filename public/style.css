@@ -1,0 +1,361 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .navbar-brand img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav .navbar-nav .nav-link {
+    font-size: 18px;
+    margin: 0 5px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav .navbar-nav .nav-link:hover {
+    color: #4CAF50;
+}
+
+.about-section {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .services,
+footer .container .subscribe {
+    margin-bottom: 20px;
+}
+
+footer .services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .services ul li {
+    margin: 5px 0;
+}
+
+footer .services ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer .services ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #4CAF50;
+}
+
+footer input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #45a049;
+}
+
+footer .legal {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer .legal a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer .legal a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.meme-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.meme-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.meme-heading {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.meme-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.meme-card:hover video {
+    opacity: 1;
+}
+
+.download-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    font-size: 16px;
+}
+
+.meme-card:hover .download-btn {
+    display: block;
+}
+
+.download-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Navbar Styling */
+.navbar-brand img {
+    height: 70px;
+    border-radius: 50%;
+}
+.navbar-nav .nav-link {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: green;
+}
+.navbar-nav .nav-link.active {
+    color: green;
+}
+
+/* Reels Section */
+.reels-container {
+    padding: 30px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.reels-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.reel-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.reel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.reel-video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 177.78%; /* 9:16 aspect ratio */
+}
+.reel-video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.reel-caption {
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+.reel-caption h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.reel-caption p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+}
+footer h4 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    margin: 5px 0;
+}
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+    color: green;
+}
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.subscribe input[type="email"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.subscribe button {
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.subscribe button:hover {
+    background-color: #005b33;
+}
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: green;
+}
+.legal {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+}
+.legal a {
+    text-decoration: none;
+    color: green;
+}
+.legal a:hover {
+    text-decoration: underline;
+}
